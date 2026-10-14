@@ -6,7 +6,7 @@
 // Inicia a sessão do usuários (ou retoma uma sessão já existente)
 session_start();
 
-// Caberálhos HTTP que impedem o navegador de guardar a página em cache
+// Cabeçálhos HTTP que impedem o navegador de guardar a página em cache
 
 header("Cache-control: no-cache, no-store, must-revalidate");
 header("Pragma: no-cache");

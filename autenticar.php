@@ -1,6 +1,11 @@
 <?php
 //Autenicar se o e-mail e senha estão certos
 // Permite guardar os dados do usuario cadastrado entre as paginas
+
+//Aqui inicia a sessão do usuário
+session_start();
+
+
 include("conexao.php");
 
 // Recebe o email e senha digitados no formulário de login
