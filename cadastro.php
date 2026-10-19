@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h1>Cadastro de usuário</h1>
-        <p class="substituto">Crie sua conta para acessar o sistema da biblioteca</p>
+        <p class="subtitulo">Crie sua conta para acessar o sistema da biblioteca</p>
     
     <?php 
     if(isset($_GET['erro']) && $_GET['erro'] === 'email') {

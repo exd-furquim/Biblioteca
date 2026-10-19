@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,8 +26,8 @@
             </div>
             <div class="form-group">
  <label for="senha">Senha</label>
- <input type="password" id="seha" name="senha"
- placeholder="Digite sua senha">
+ <input type="password" id="senha" name="senha"
+ placeholder="Digite sua senha" required>
             </div>
             <button type="submit" class="btn btn-block">Entrar</button>
         </form>
@@ -37,6 +37,7 @@
         <a href="cadastro.php" class="btn btn-voltar">Voltar para cadastro</a>
       <div class="dica-navegacao">
         <strong>Fluxo:</strong> login → Painel → Cadastrar ou Listar Livros
+    </div>
     </div>
 </body>
 </html>

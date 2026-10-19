@@ -4,6 +4,11 @@
 
 //Conceitos: POST, password_hash, MySQL, INSERT, verificação de E-mail duplicado.
 
+if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !isset($_POST['nome'], $_POST['email'], $_POST['senha'])) {
+    header("Location: cadastro.php");
+    exit();
+}
+
 // Inclui o arquivo de conexão om o banco de dados.
 include('conexao.php');
 

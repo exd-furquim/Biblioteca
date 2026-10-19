@@ -5,6 +5,10 @@
 //Aqui inicia a sessão do usuário
 session_start();
 
+if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !isset($_POST['email'], $_POST['senha'])) {
+    header("Location: login.php");
+    exit();
+}
 
 include("conexao.php");
 
