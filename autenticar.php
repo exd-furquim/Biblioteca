@@ -36,8 +36,7 @@ if ($usuario && password_verify($senha, $usuario['senha'])) {
     //redireciona para o painel principal
     header("location: painel.php");
     exit();
-}
-else {
+} else {
     //login inválido = redireciona de volta para login com mensagem de erro
     header("Location: login.php?erro=login");
     exit();

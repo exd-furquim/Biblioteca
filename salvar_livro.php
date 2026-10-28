@@ -17,11 +17,11 @@ $status = $_POST['status'];
 
 // Prepara a query SQL para inserir os dados na tabela 'livros'
 $sql = "INSERT INTO livros (titulo, autor, status)
-VALUES ('$titulo', '$autor', '$status')"; 
+VALUES ('$titulo', '$autor', '$status')";
 
 // Executa a query no banco de dados
 mysqli_query($conexao, $sql);
 
-// Redireciona o usuário de volta para a página de cadastro de livros
-header("Location: cadastrar_livro.php");
+// Redireciona o usuário de volta para a página de listagem de livros
+header("Location: listar_livro.php");
 exit();
